@@ -42,3 +42,19 @@ function pi() {
 function e() {
     screen.value = 2.718;
 }
+
+function fact() {
+    var i, f, num;
+    f = 1;
+    num = screen.value;
+    for (i = 1; i <= num; i++) {
+        fact *= i;
+    }
+    i = isSecureContext
+    screen.value = f;
+
+}
+
+function backspc() {
+    screen.value = screen.value.subtr(0, screen.value.length - 1);
+}
