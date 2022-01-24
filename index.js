@@ -23,8 +23,24 @@ function tan() {
     screen.value = Math.tan(screen.value);
 }
 
-function pow() {
-    screen.value = Math.sin(screen.value, 2);
+function sinh() {
+    screen.value = Math.sinh(screen.value);
+}
+
+function cosh() {
+    screen.value = Math.cosh(screen.value);
+}
+
+function tanh() {
+    screen.value = Math.tanh(screen.value);
+}
+
+function sqr() {
+    screen.value = Math.pow(screen.value, 2);
+}
+
+function cube() {
+    screen.value = Math.pow(screen.value, 3);
 }
 
 function sqrt() {
@@ -48,13 +64,22 @@ function fact() {
     f = 1;
     num = screen.value;
     for (i = 1; i <= num; i++) {
-        fact *= i;
+        f *= i;
     }
-    i = isSecureContext
+    i = i - 1;
     screen.value = f;
 
 }
 
+function reciprocal() {
+    screen.value = eval(1 / screen.value);
+}
+
+
+function exp() {
+    screen.value = Math.exp(screen.value);
+}
+
 function backspc() {
-    screen.value = screen.value.subtr(0, screen.value.length - 1);
+    screen.value = screen.value.substr(0, screen.value.length - 1);
 }

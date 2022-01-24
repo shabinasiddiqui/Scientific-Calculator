@@ -9,8 +9,9 @@ body {
 }
 
 .container {
-    width: 40%;
-    height: inherit;
+    width: 26%;
+    /* height: inherit; */
+    background-color: black;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 12px 12px 20px #cbced1, -12px -12px 20px #ffffff;
@@ -18,15 +19,18 @@ body {
 
 .display #screen {
     width: 97%;
-    height: 70px;
+    height: 100px;
     font-size: 35px;
     outline: none;
     border: none;
+    color: white;
     text-align: right;
     padding-right: 0.5em;
-    background: #ecf0f3;
+    /* background: #ecf0f3; */
+    background: black;
     border-radius: 6px;
-    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+    /* box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff; */
+    box-shadow: inset -2px 0px 8px #ffffff;
 }
 
 .btns {
@@ -39,26 +43,30 @@ body {
 }
 
 .btns .row button {
-    width: 80px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     font-size: 16px;
     border: none;
     outline: none;
+    background: black;
+    color: white;
     margin: 5px;
-    border-radius: 4px;
-    box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffffff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px #ffffff, -3px -3px 3px #00000020;
     transition: .1s;
 }
 
 .btns .row button:hover {
     box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1), inset -5px -5px 8px #fff;
     background: #fff;
+    color: black;
 }
 
 #eval {
     background: #33ccff;
     color: #fff;
-    width: 170px;
+    width: 50px;
+    height: 50px;
     box-shadow: inset 5px 5px 8px #66d9ff, inset -5px -5px 8px #00ace6;
 }
 

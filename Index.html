@@ -15,15 +15,15 @@
             <input id="screen" type="text" placeholder="0">
         </div>
         <div class="btns">
-            <div class="row">
-                <button onclick="sin()">sinh</button>
-                <button onclick="cos()">cosh</button>
-                <button onclick="tan()">tanh</button>
-                <button class="btn">1/x</button>
-                <button class="btn">rad</button>
+            <!-- <div class="row">
+                <button onclick="sinh()">sinh</button>
+                <button onclick="cosh()">cosh</button>
+                <button onclick="tanh()">tanh</button>
+                <button onclick="reciprocal()">1/x</button>
 
 
-            </div>
+
+            </div> -->
             <div class="row">
                 <button onclick="sin()">sin</button>
                 <button onclick="cos()">cos</button>
@@ -35,9 +35,9 @@
             </div>
 
             <div class="row">
-                <button onclick="pow()"> x<span style="position: relative; bottom: .4em; right: .1em;">y</span></button>
-                <button onclick="pow()"> x<span style="position: relative; bottom: .4em; right: .1em;">2</span></button>
-                <button onclick="pow()"> x<span style="position: relative; bottom: .4em; right: .1em;">3</span></button>
+                <button onclick="reciprocal()">1/x</button>
+                <button onclick="sqr()"> x<span style="position: relative; bottom: .4em; right: .1em;">2</span></button>
+                <button onclick="cube()"> x<span style="position: relative; bottom: .4em; right: .1em;">3</span></button>
                 <button onclick="sqrt()">&Sqrt;</button>
                 <button onclick="fact()">x!</button>
             </div>
@@ -65,12 +65,15 @@
                 <button class="btn">2</button>
                 <button class="btn">3</button>
                 <button class="btn">+</button>
-                <button class="btn">%</button>
+                <button class="btn">-</button>
+
             </div>
             <div class="row">
                 <button onclick="e()">&exponentiale;</button>
                 <button class="btn">0</button>
                 <button class="btn">.</button>
+                <button class="btn">%</button>
+
                 <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
 
 
