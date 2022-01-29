@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 body {
     padding: 0;
     margin: 0;
@@ -6,11 +7,11 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #ecf0f3;
+    font-family: 'Playfair Display', serif;
 }
 
 .container {
     width: 26%;
-    /* height: inherit; */
     background-color: black;
     padding: 10px;
     border-radius: 8px;
@@ -25,12 +26,9 @@ body {
     border: none;
     color: white;
     text-align: right;
-    padding-right: 0.5em;
-    /* background: #ecf0f3; */
     background: black;
-    border-radius: 6px;
-    /* box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff; */
-    box-shadow: inset -2px 0px 8px #ffffff;
+    border-top: 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .btns {
@@ -50,44 +48,31 @@ body {
     outline: none;
     background: black;
     color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     margin: 5px;
     border-radius: 50%;
-    box-shadow: 3px 3px 3px #ffffff, -3px -3px 3px #00000020;
-    transition: .1s;
+    transition: .2s;
 }
 
 .btns .row button:hover {
-    box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1), inset -5px -5px 8px #fff;
     background: #fff;
     color: black;
+    border: 1px solid rgba(16, 16, 16, 0.5);
 }
 
 #eval {
-    background: #33ccff;
-    color: #fff;
+    background: rgb(116, 236, 112);
+    color: black;
     width: 50px;
     height: 50px;
-    box-shadow: inset 5px 5px 8px #66d9ff, inset -5px -5px 8px #00ace6;
 }
 
-#eval:hover {
-    box-shadow: inset 5px 5px 8px #00ace6, inset -5px -5px 8px #00ace6;
+.btns .row button.green {
+    background: rgb(116, 236, 112);
+    color: black
 }
 
-#ac {
-    background: #33cc33;
-    color: #fff;
-}
-
-#ac:hover {
-    box-shadow: inset 5px 5px 8px #2eb82e, inset -5px -5px 8px #33cc33;
-}
-
-#ce {
-    background: #ff3399;
-    color: #fff;
-}
-
-#ce:hover {
-    box-shadow: inset 5px 5px 8px #e60073, inset -5px -5px 8px #ff3399;
+.btns .row button.green:hover {
+    box-shadow: inset 5px 5px 8px rgb(116, 236, 112), inset -7px -7px 8px rgb(189, 228, 191);
+    color: black;
 }
